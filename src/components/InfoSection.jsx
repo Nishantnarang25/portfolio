@@ -45,7 +45,7 @@ const InfoSection = () => {
       <div className="w-full max-w-[700px] mx-auto px-6 py-4 bg-white shadow-sm rounded-xl mb-4 border-white border-2">
         <div className="flex flex-row items-start justify-between">
           <motion.img
-            src="../public/profile.png"
+            src="/profile.png"
             alt="profile"
             className="w-40 object-cover rounded-lg pt-6 mb-8"
             animate={{ y: [0, -10, 0] }}

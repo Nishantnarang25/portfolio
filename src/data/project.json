@@ -3,13 +3,13 @@
       {
         "name": "StreamLine",
         "description": "A real-time messaging web app that enables seamless communication. Built using Socket.io for real-time data transfer and peer-to-peer connections. Designed with a sleek and intuitive interface for an enhanced user experience.",
-        "imgLink": "../public/streamLine.jpg",
+        "imgLink": "/streamLine.jpg",
         "githubLink": "https://github.com/Nishantnarang25/streamLine"
       },
       {
         "name": "LearnSync",
         "description": "An interactive learning platform built for students and teachers to connect, compete, and grow through real-time coding contests. Offers dual-user problem solving, progress tracking, and a clean, responsive UI. Built with a focus on collaboration and skill development.",
-        "imgLink": "../public/learnSync.png",
+        "imgLink": "/learnSync.png",
         "githubLink": "https://github.com/Nishantnarang25/learnsync"
       }
      
