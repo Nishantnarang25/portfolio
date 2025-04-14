@@ -1,0 +1,29 @@
+{
+    "certifications": [
+      {
+        "certificateImage": "../public/udemyWebDev.png",
+        "certificationName": "The Complete 2024 Web Development Bootcamp",
+        "issuedAt": "November 6, 2024",
+        "issuedBy": "Udemy",
+        "createdAt": "2024-11",
+        "certificateURL": "https://www.udemy.com/certificate/UC-392b2e31-1568-461f-8285-cce946fdb1bf/"
+      },
+      {
+        "certificateImage": "../public/careerEssentials.png",
+        "certificationName": "Career Essentials in Software Development",
+        "issuedAt": "June 15, 2024",
+        "issuedBy": "Microsoft & LinkedIn",
+        "createdAt": "2024-06",
+        "certificateURL": "https://www.linkedin.com/learning/certificates/cb73b73491ea0e64bfece8c60a4a51d788d1abbc198e5c31c44e72e4d4504807"
+      },
+      {
+        "certificateImage": "../public/udemyUIUX.png",
+        "certificationName": "Become a UX/UI Designer! Master Mobile and Web Design, User Interface + User Experience",
+        "issuedAt": "June 19, 2024",
+        "issuedBy": "Udemy",
+        "createdAt": "2024-06",
+        "certificateURL": "https://www.udemy.com/certificate/UC-392b2e31-1568-461f-8285-cce946fdb1bf/"
+      }
+    ]
+  }
+  
