@@ -43,21 +43,21 @@ const InfoSection = () => {
   return (
     <>
       <div className="w-full max-w-[700px] mx-auto px-6 py-4 bg-white shadow-sm rounded-xl mb-4 border-white border-2">
-        <div className="flex flex-row items-start justify-between">
+        <div className="flex flex-col sm:flex-row items-start justify-between">
           <motion.img
             src="/profile.png"
             alt="profile"
-            className="w-40 object-cover rounded-lg pt-6 mb-8"
+            className="w-40 object-cover rounded-lg pt-6 mb-8 sm:mb-0 sm:w-48 sm:h-48"
             animate={{ y: [0, -10, 0] }}
             transition={{
               y: {
                 repeat: Infinity,
-                repeatType: "reverse",
+                repeatType: 'reverse',
                 duration: 1.5,
               },
             }}
           />
-          <p className="text-[#0A0A0A]">{time}</p> {/* Dynamically updated time */}
+          <p className="text-[#0A0A0A] mt-4 sm:mt-0">{time}</p> {/* Dynamically updated time */}
         </div>
         <p className="text-[#0A0A0A] mt-4 text-medium text-left mb-6">
           Hi, I’m Nishant — a full-stack developer dedicated to building reliable, high-quality websites.
@@ -65,7 +65,7 @@ const InfoSection = () => {
           also secure, scalable, and user-friendly. I take pride in delivering work that’s thoughtful, functional, and tailored
           to your needs — so you can trust that your vision is in good hands.
         </p>
-        <div className="flex flex-row items-center justify-start gap-6 mt-4">
+        <div className="flex flex-col sm:flex-row items-center justify-start gap-6 mt-4">
           {/* LinkedIn */}
           <motion.a
             whileHover={{ scale: 1.1 }}
@@ -73,7 +73,7 @@ const InfoSection = () => {
             href="https://www.linkedin.com/in/nishant-%E2%80%9C-6b4571246"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0A0A0A] text-3xl hover:text-[#0A66C2] transition"
+            className="text-[#0A0A0A] text-2xl sm:text-3xl hover:text-[#0A66C2] transition"
           >
             <FaLinkedin />
           </motion.a>
@@ -84,7 +84,7 @@ const InfoSection = () => {
             href="https://github.com/Nishantnarang25"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0A0A0A] text-3xl hover:text-[#4d2886] transition"
+            className="text-[#0A0A0A] text-2xl sm:text-3xl hover:text-[#4d2886] transition"
           >
             <FaGithub />
           </motion.a>
@@ -95,18 +95,18 @@ const InfoSection = () => {
             href="https://mail.google.com/mail/?view=cm&fs=1&to=nishantnarang111@gmail.com&su=Let's%20Connect&body=Hi%20Nishant%2C%20I%20wanted%20to%20connect%20regarding..."
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0A0A0A] text-3xl hover:text-[#EA4335] transition"
+            className="text-[#0A0A0A] text-2xl sm:text-3xl hover:text-[#EA4335] transition"
           >
             <FaEnvelope />
           </motion.a>
 
           <motion.a
-            whileHover={{ scale: 1.05}}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/public//resume.pdf"
+            href="/public/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-[#0A0A0A] text-white text-md rounded-xl hover:text-[#0A0A0A] hover:bg-[#FFD95A] transition"
+            className="px-4 sm:px-6 py-2 sm:py-3 bg-[#0A0A0A] text-white text-sm sm:text-md rounded-xl hover:text-[#0A0A0A] hover:bg-[#FFD95A] transition"
           >
             Download Resume
           </motion.a>
@@ -119,7 +119,7 @@ const InfoSection = () => {
           style={{ overflow: 'hidden', height: '80px' }}
         >
           <motion.div
-            className="flex items-center space-x-16 text-3xl"
+            className="flex items-center space-x-8 sm:space-x-16 text-2xl sm:text-3xl"
             animate={{ x: ['100%', '-100%'] }}
             transition={{
               duration: 12,
@@ -135,7 +135,7 @@ const InfoSection = () => {
                 whileTap={{ scale: 0.9 }}
               >
                 <div className="text-[#0A0A0A]">{tech.icon}</div>
-                <span className="text-lg text-[#0A0A0A] font-poppins">{tech.name}</span>
+                <span className="text-lg sm:text-xl text-[#0A0A0A] font-poppins">{tech.name}</span>
               </motion.div>
             ))}
           </motion.div>

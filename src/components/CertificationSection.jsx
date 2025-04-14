@@ -21,10 +21,10 @@ const CertificationsSection = () => {
               <img
                 src={certification.certificateImage}
                 alt={certification.certificationName}
-                className="w-full max-h-80  rounded-lg mb-4"
+                className="w-full max-h-80 rounded-lg mb-4 object-cover"
               />
               <div className="flex flex-col items-start">
-                <h2 className="text-2xl  text-left font-semibold text-[#333333] mb-2">{certification.certificationName}</h2>
+                <h2 className="text-2xl text-left font-semibold text-[#333333] mb-2">{certification.certificationName}</h2>
                 <p className="text-md text-[#555] mb-1"><strong>Issued At:</strong> {certification.issuedAt}</p>
                 <p className="text-md text-[#555]"><strong>Issued By:</strong> {certification.issuedBy}</p>
               </div>

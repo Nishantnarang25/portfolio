@@ -34,7 +34,7 @@ export default function Contact() {
                 name="email"
                 required
                 placeholder="Enter your email"
-                className="w-full p-3 border border-[#E0E0E0]  rounded-xl bg-white placeholder:text-[#A8A8A8] text-[#0A0A0A] focus:outline-none transition duration-300"
+                className="w-full p-3 border border-[#E0E0E0] rounded-xl bg-white placeholder:text-[#A8A8A8] text-[#0A0A0A] focus:outline-none transition duration-300"
               />
               <ValidationError
                 prefix="Email"
