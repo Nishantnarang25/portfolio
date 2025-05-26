@@ -10,7 +10,7 @@ import {
   FaGithub,
   FaGoogle,
   FaLinkedin,
-  FaEnvelope
+  FaEnvelope,
 } from 'react-icons/fa';
 
 import {
@@ -108,7 +108,7 @@ const InfoSection = () => {
 
 
 
-        <div className="flex flex-col sm:flex-row items-end justify-start gap-4 mt-6">
+        <div className="flex flex-wrap items-center justify-start gap-4 mt-6">
           <a
             href="https://www.linkedin.com/in/nishant-%E2%80%9C-6b4571246"
             target="_blank"
@@ -139,9 +139,9 @@ const InfoSection = () => {
             href="/NishantFullStack.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-[#111827] text-white text-sm sm:text-md rounded-xl hover:text-white hover:bg-[#111827] transition-colors duration-300"
+            className="flex items-center gap-2 px-4 sm:px-4 py-2 sm:py-3 bg-[#111827] text-white text-sm sm:text-md rounded-xl hover:text-white hover:bg-[#111827] transition-colors duration-300 sm:text-sm"
           >
-            Download Resume
+            View My Resume
           </a>
 
         </div>
@@ -156,7 +156,7 @@ const InfoSection = () => {
           style={{ overflow: 'hidden', height: '80px' }}
         >
           <motion.div
-            className="flex items-center space-x-8 sm:space-x-16 text-xl sm:text-2xl"
+            className="flex items-center space-x-8 sm:space-x-16 text-xl sm:text-2xl bg-white"
             animate={{ x: ['0%', '-100%'] }}
 
             transition={{

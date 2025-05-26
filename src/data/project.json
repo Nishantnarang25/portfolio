@@ -1,18 +1,28 @@
 {
-    "projects": [
-      {
-        "name": "StreamLine",
-        "description": "A real-time messaging web app that enables seamless communication. Built using Socket.io for real-time data transfer and peer-to-peer connections. Designed with a sleek and intuitive interface for an enhanced user experience.",
-        "imgLink": "/streamLine.JPG",
-        "githubLink": "https://github.com/Nishantnarang25/streamLine"
-      },
-      {
-        "name": "LearnSync",
-        "description": "An interactive learning platform built for students and teachers to connect, compete, and grow through real-time coding contests. Offers dual-user problem solving, progress tracking, and a clean, responsive UI. Built with a focus on collaboration and skill development.",
-        "imgLink": "/learnSync.PNG",
-        "githubLink": "https://github.com/Nishantnarang25/learnsync"
-      }
-     
-    ]
-  }
-  
+  "projects": [
+    {
+      "name": "StreamLine",
+      "description": "A real-time messaging web app that enables seamless communication. Built using Socket.io for real-time data transfer and peer-to-peer connections. Designed with a sleek and intuitive interface for an enhanced user experience.",
+      "imgLink": "/streamLine.JPG",
+      "githubLink": "https://github.com/Nishantnarang25/streamLine",
+      "logo": "StreamLineIcon.png",
+      "tagline": "Real-time Chat Platform"
+    },
+    {
+      "name": "LearnSync (Group Project)",
+      "description": "An interactive learning platform built for students and teachers to connect, compete, and grow through real-time coding contests. Offers dual-user problem solving, progress tracking, and a clean, responsive UI. Built with a focus on collaboration and skill development.",
+      "imgLink": "/learnSync.jpg",
+      "githubLink": "https://github.com/Nishantnarang25/learnsync",
+      "logo": "/LearnSyncIcon.png",
+      "tagline": "An AI-Powered Personalized Larning Platform"
+    },
+    {
+      "name": "PromoCraft",
+      "description": "A creative campaign builder designed for marketing teams to craft, schedule, and monitor promotions seamlessly. Includes performance tracking and customizable templates to boost productivity and consistency across channels.",
+      "imgLink": "noPreview.png",
+      "githubLink": "https://github.com/Nishantnarang25/learnsync",
+      "logo": "PromoCraftIcon.png",
+      "tagline": "Marketing Campaign Builder"
+    }
+  ]
+}

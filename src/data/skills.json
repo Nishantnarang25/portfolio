@@ -1,79 +1,70 @@
 {
-    "skills": [
-      {
-        "skillType": "Programming Languages",
-        "values": [
-          {
-            "name": "JavaScript"
-          },
-          {
-            "name": "C"
-          },
-          {
-            "name": "C++"
-          },
-          {
-            "name": "SQL"
-          }
-        ]
-      },
-      {
-        "skillType": "Libraries and Frameworks",
-        "values": [
-          {
-            "name": "React"
-          },
-          {
-            "name": "Next.js"
-          },
-          {
-            "name": "HTML / CSS"
-          },
-          {
-            "name": "Tailwind CSS"
-          },
-          {
-            "name": "Node.js"
-          },
-          {
-            "name": "Express.js"
-          }
-        ]
-      },
-      {
-        "skillType": "Databases",
-        "values": [
-          {
-            "name": "PostgreSQL"
-          },
-          {
-            "name": "MongoDB"
-          },
-          {
-            "name": "Supabase"
-          }
-        ]
-      },
-      {
-        "skillType": "Tools and Platforms",
-        "values": [
-          {
-            "name": "Git"
-          },
-          {
-            "name": "Vercel"
-          },
-          {
-            "name": "GitHub"
-          },
-          {
-            "name": "Figma"
-          },
-          {
-            "name": "Postman"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "skills": [
+    {
+      "skillType": "Programming Languages",
+      "values": [
+        { "name": "JavaScript" },
+        { "name": "TypeScript" },
+        { "name": "SQL" },
+        { "name": "C" },
+        { "name": "C++" }
+      ]
+    },
+    {
+      "skillType": "Libraries and Frameworks",
+      "values": [
+        { "name": "React.js" },
+        { "name": "Next.js" },
+        { "name": "Node.js" },
+        { "name": "Express.js" },
+        { "name": "EJS" },
+        { "name": "Sequelize" },
+        { "name": "Tailwind CSS" },
+        { "name": "Bootstrap" },
+        { "name": "HTML5 / CSS3" }
+      ]
+    },
+    {
+      "skillType": "Databases",
+      "values": [
+        { "name": "PostgreSQL" },
+        { "name": "MongoDB Atlas" },
+        { "name": "Supabase" },
+        { "name": "Firebase" }
+      ]
+    },
+    {
+      "skillType": "Tools and Platforms",
+      "values": [
+        { "name": "Git" },
+        { "name": "GitHub" },
+        { "name": "VS Code" },
+        { "name": "Postman" },
+        { "name": "Vercel" },
+        { "name": "Netlify" },
+        { "name": "Render" },
+        { "name": "Figma" }
+      ]
+    },
+    {
+      "skillType": "Authentication & APIs",
+      "values": [
+        { "name": "RESTful APIs" },
+        { "name": "JWT" },
+        { "name": "NextAuth" },
+        { "name": "OpenAI API" },
+        { "name": "Google OAuth" }
+      ]
+    },
+    {
+      "skillType": "Design Skills",
+      "values": [
+        { "name": "Wireframing" },
+        { "name": "Prototyping" },
+        { "name": "User Flows" },
+        { "name": "Responsive Design" },
+        { "name": "Usability Testing" }
+      ]
+    }
+  ]
+}
