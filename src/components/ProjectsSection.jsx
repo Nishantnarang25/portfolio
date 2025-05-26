@@ -25,18 +25,18 @@ const ProjectsSection = () => {
               className="bg-[#F8F8F9] p-4 rounded-lg  "
             >
               {/* Header Row */}
-              <div className="flex flex-wrap justify-between items-center mb-2">                
-                <div className="flex items-center gap-4">
-                <img
-                  src={project.logo}
-                  alt={`${project.name} logo`}
-                  className="w-10 h-10 object-contain"
-                />
-                <div className="flex items-start space-y-1 flex-col text-left">
-                  <h2 className="text-lg font-semibold text-[#374151] ">{project.name}</h2>
-                  <p className="text-md text-[#6B7280]">{project.tagline}</p>
+              <div className="flex flex-wrap justify-between items-center mb-2">
+                <div className="flex items-center gap-4 mb-2 sm:mb-4">
+                  <img
+                    src={project.logo}
+                    alt={`${project.name} logo`}
+                    className="w-10 h-10 object-contain"
+                  />
+                  <div className="flex items-start space-y-1 flex-col text-left">
+                    <h2 className="text-lg font-semibold text-[#374151] ">{project.name}</h2>
+                    <p className="text-md text-[#6B7280]">{project.tagline}</p>
+                  </div>
                 </div>
-              </div>
 
                 <button
                   onClick={() => toggleExpand(index)}
