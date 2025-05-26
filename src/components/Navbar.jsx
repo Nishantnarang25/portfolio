@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Plus, Minus, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { id: 'info', label: 'Info', to: '/' },
-  { id: 'skills', label: 'Skills', to: '/', sectionId: 'skills' },
-  { id: 'work', label: 'Work', to: '/', sectionId: 'projects' },
-  { id: 'contact', label: 'Contact', to: '/contact' },
+  { id: 'info', label: 'Home', to: '/', sectionId: 'info', icon: 'home.png', hoveredIcon: 'homeHovered.png' },
+  { id: 'skills', label: 'Technical Skills', to: '/', sectionId: 'skills', icon: 'skills.png', hoveredIcon: 'skillsHovered.png' },
+  { id: 'work', label: 'My Projects', to: '/', sectionId: 'projects', icon: 'projects.png', hoveredIcon: 'projectsHovered.png' },
+  { id: 'contact', label: 'Get in Touch', to: '/contact', icon: 'contact.png', hoveredIcon: 'contactHovered.png' },
 ];
 
 const Navbar = () => {
@@ -36,16 +36,38 @@ const Navbar = () => {
     }
   };
 
-  return (
-    <nav className="w-full max-w-[700px] mx-auto px-6 py-4 bg-white shadow-sm rounded-xl mb-4 border-white border-2">
-      <div className="flex items-center justify-between">
-        <img
-          src="/logo.png"
-          alt="logo"
-          className="h-6 w-auto object-contain opacity-90"
-        />
+  // Update active section on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (location.pathname !== '/') return;
 
-        {/* Hamburger Menu Button */}
+      let closestSection = 'info';
+      let minDistance = Infinity;
+
+      navItems.forEach((item) => {
+        if (item.sectionId) {
+          const el = document.getElementById(item.sectionId);
+          if (el) {
+            const rect = el.getBoundingClientRect();
+            const distance = Math.abs(rect.top);
+            if (distance < minDistance && rect.top <= window.innerHeight / 2) {
+              minDistance = distance;
+              closestSection = item.id;
+            }
+          }
+        }
+      });
+
+      setActive(closestSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [location.pathname]);
+
+  return (
+    <nav className="w-full max-w-[700px] mx-auto px-6 py-4 bg-[#ffffff] shadow-sm rounded-xl mb-4">
+      <div className="flex items-center justify-between">
         <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <X className="h-6 w-6 text-[#0A0A0A]" />
@@ -55,49 +77,35 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (Dropdown below Navbar) */}
-      <div
-        className={`lg:hidden ${isOpen ? 'block' : 'hidden'} mt-4 w-full px-6 py-2 bg-white shadow-lg rounded-xl border-t-2 border-[#F2F2F2] space-y-2`}
-      >
-        {navItems.map((item) => (
-          <div
-            key={item.id}
-            onClick={() => handleClick(item)}
-            className={`flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-colors duration-300 justify-start ${
-              active === item.id ? 'bg-[#FFD95A]' : 'bg-[#F2F2F2]'
-            }`}
-          >
-            <span className="text-[#0A0A0A]">{item.label}</span>
-            <div className="flex items-center justify-center w-6 h-6 rounded-full border-[#0A0A0A] border-2">
-              {active === item.id ? (
-                <Minus className="h-4 w-4 text-[#0A0A0A]" />
-              ) : (
-                <Plus className="h-4 w-4 text-[#0A0A0A]" />
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
+      {/* Mobile Menu */}
+     <div className={`lg:hidden ${isOpen ? 'flex' : 'hidden'} flex-col mt-4 w-full  py-2 gap-4`}>
+  {navItems.map((item) => (
+    <div
+      key={item.id}
+      onClick={() => handleClick(item)}
+      className="flex items-center gap-3 cursor-pointer"
+    >
+      <img
+        src={`/${active === item.id ? item.hoveredIcon : item.icon}`}
+        alt={item.label}
+        className="w-8 h-8"
+      />
+      <span className="text-[#0A0A0A] text-base font-medium">{item.label}</span>
+    </div>
+  ))}
+</div>
 
-      {/* Desktop Navbar items */}
-      <div className="hidden lg:flex space-x-6 text-sm font-medium">
+
+      {/* Desktop Menu */}
+      <div className="hidden lg:flex space-x-6 justify-start mt-4">
         {navItems.map((item) => (
-          <div
+          <img
             key={item.id}
+            src={`/${active === item.id ? item.hoveredIcon : item.icon}`}
+            alt={item.label}
             onClick={() => handleClick(item)}
-            className={`flex items-center gap-2 px-3 py-2 rounded-xl cursor-pointer transition-colors duration-300 min-w-24 justify-center mb-2 ${
-              active === item.id ? 'bg-[#FFD95A]' : 'bg-[#F2F2F2]'
-            }`}
-          >
-            <span className="text-[#0A0A0A]">{item.label}</span>
-            <div className="flex items-center justify-center w-6 h-6 rounded-full border-[#0A0A0A] border-2">
-              {active === item.id ? (
-                <Minus className="h-4 w-4 text-[#0A0A0A]" />
-              ) : (
-                <Plus className="h-4 w-4 text-[#0A0A0A]" />
-              )}
-            </div>
-          </div>
+            className="w-10 h-10 cursor-pointer"
+          />
         ))}
       </div>
     </nav>
