@@ -12,7 +12,7 @@ const ProjectsSection = () => {
   return (
     <div className="w-full max-w-[700px] mx-auto px-6 py-6 bg-white shadow-sm rounded-xl mb-6 border-white ">
       <h1 className="text-xl font-medium text-left text-[#6B7280] mb-4 before:content-['●'] before:mr-2 before:text-[#6B7280]">
-        Projects
+        Technical Projects
       </h1>
 
       <div className="flex flex-col gap-6">
@@ -52,7 +52,7 @@ const ProjectsSection = () => {
                   <img
                     src={project.imgLink}
                     alt={`${project.name} preview`}
-                    className="w-full h-80 object-cover rounded-lg border border-[#E0E0E0]"
+                    className="w-full h-auto object-cover rounded-lg border border-[#E0E0E0]"
                   />
 
                   <p className="text-sm text-[#6B7280]">

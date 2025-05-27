@@ -1,0 +1,14 @@
+{
+  "design": [
+    {
+      "image": "/schoolAppThumbnail.png",
+      "description": "A vibrant and intuitive School App UI designed for quick classroom access, daily subject tracking, and a clean user dashboard. Completed under a tight deadline, this design showcases a sharp focus on usability and modern visual aesthetics.",
+      "figmaLink": "https://www.figma.com/proto/ZhorY6uWc3pY44w1c71iXm/School-App?node-id=3-387&p=f&t=K5efvYpInn0msM7o-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=158%3A3933&show-proto-sidebar=1"
+    },
+    {
+      "image": "/foodDeliveryApp.png",
+      "description": "A sleek and user-friendly Food Delivery App interface crafted to enhance the ordering experience. Features a clean layout, bold imagery, and smart category navigation—perfectly optimized for on-the-go users.",
+      "figmaLink": "https://www.figma.com/proto/obnWEZRZaxXw2XojKlBcAe/Canteen-App-DEV?node-id=233-2006&t=MTvPLxrIL9IEs4gx-1&scaling=scale-down&content-scaling=fixed&page-id=123%3A3983&starting-point-node-id=123%3A4010&show-proto-sidebar=1"
+    }
+  ]
+}

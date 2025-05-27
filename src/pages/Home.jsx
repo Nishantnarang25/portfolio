@@ -4,6 +4,8 @@ import InfoSection from '../components/InfoSection';
 import SkillsSection from '../components/SkillsSection';
 import ProjectsSection from '../components/ProjectsSection';
 import CertificationsSection from '../components/CertificationSection';
+import DesignSection from '../components/DesignSection.jsx';
+import Services from '../components/Services.jsx';
 
 const Home = () => {
   const location = useLocation();
@@ -32,6 +34,12 @@ const Home = () => {
       <section id="projects">
         <ProjectsSection />
       </section>
+      
+      <section id="designs">
+        <DesignSection />
+      </section>
+
+      <Services/>
 
       <section id="certifications">
         <CertificationsSection />
@@ -41,3 +49,4 @@ const Home = () => {
 };
 
 export default Home;
+

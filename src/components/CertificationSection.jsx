@@ -20,7 +20,7 @@ const CertificationsSection = () => {
       <img
         src={certification.certificateImage}
         alt={certification.certificationName}
-        className="w-full max-h-60 rounded-lg mb-4 object-contain"
+        className="w-full h-auto rounded-lg mb-4 object-contain"
       />
       <div className="flex flex-col items-start">
         <h2 className="text-lg font-semibold text-[#333333] mb-1 truncate max-w-full">
