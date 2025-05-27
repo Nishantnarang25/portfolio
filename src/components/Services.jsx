@@ -38,7 +38,7 @@ const Services = () => {
           <div className="flex items-start">
             <div >
               <h2 className="text-lg before:content-['●'] before:mr-2 font-semibold text-[#333333] text-left mb-1">{service.title}</h2>
-              <p className="text-sm text-[#555] leading-snug pl-4">{service.description}</p>
+              <p className="text-sm text-[#555] text-left leading-snug pl-4">{service.description}</p>
             </div>
           </div>
         </div>
