@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
-  { id: 'info', label: 'Home', to: '/', sectionId: 'info', icon: 'homenew.png', hoveredIcon: 'homeHovered.png' },
+  { id: 'info', label: 'Home', to: '/', sectionId: 'info', icon: 'home.png', hoveredIcon: 'homeHovered.png' },
   { id: 'skills', label: 'Technical Skills', to: '/', sectionId: 'skills', icon: 'skills.png', hoveredIcon: 'skillsHovered.png' },
   { id: 'work', label: 'My Projects', to: '/', sectionId: 'projects', icon: 'projects.png', hoveredIcon: 'projectsHovered.png' },
   { id: 'contact', label: 'Get in Touch', to: '/contact', icon: 'contact.png', hoveredIcon: 'contactHovered.png' },
