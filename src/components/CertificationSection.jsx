@@ -13,10 +13,8 @@ const CertificationsSection = () => {
 
   {certificationsData.certifications.map((certification) => {
   return (
-    <div
-      key={certification.certificationName}
-      className="bg-white p-6 border border-[#E0E0E0] rounded-lg shadow-sm mb-6 transition-shadow duration-300 hover:shadow-lg"
-    >
+          <div className="w-full max-w-[700px] mx-auto px-6 py-6  bg-[#F8F8F9] shadow-sm rounded-xl mb-6">
+
       <img
         src={certification.certificateImage}
         alt={certification.certificationName}

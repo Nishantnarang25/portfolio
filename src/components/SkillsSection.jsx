@@ -22,9 +22,14 @@ const SkillsSection = () => {
             <ul className="list-none flex flex-wrap gap-4">
               {/* List items with color #374151 */}
               {skill.values.map((value) => (
-                <li key={value.name} className="text-md text-[#374151]">
-                  {value.name}
-                </li>
+               <li
+  key={value.name}
+  className="text-md text-[#374151]"
+  style={{ lineHeight: '1' }} // or try 1.1, 1.15, whatever looks good
+>
+  {value.name}
+</li>
+
               ))}
             </ul>
           </div>
