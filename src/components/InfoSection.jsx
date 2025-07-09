@@ -136,7 +136,7 @@ const InfoSection = () => {
 
 
           <a
-            href="/NishantFullStack.pdf"
+            href="/NishantWebDevResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 sm:px-4 py-2 sm:py-3 bg-[#111827] text-white text-sm sm:text-md rounded-xl hover:text-white hover:bg-[#111827] transition-colors duration-300 sm:text-sm"
